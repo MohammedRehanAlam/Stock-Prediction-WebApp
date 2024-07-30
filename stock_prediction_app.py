@@ -1,19 +1,20 @@
-# pip install streamlit   or   pip uninstall streamlit   and   pip install streamlit yfinance prophet plotly
+# all the required modules to be installed.
+# pip install streamlit        or     pip install streamlit yfinance prophet plotly pandas-datareader
 # pip install yfinance
 # pip install prophet
 # pip install plotly
 # pip install pandas-datareader
-# streamlit run stock_prediction_app.py
+# in the end use this code in the terminal "streamlit run stock_prediction_app.py"
 
-import streamlit as st # for building and displaying the interactive web application
-from datetime import date # for manipulating date values in the code
+import streamlit as st                  # for building and displaying the interactive web application
+from datetime import date               # for manipulating date values in the code
 
-import yfinance # for downloading historical stock price data
-from prophet import Prophet # for building and fitting the forecasting model
-from prophet.plot import plot_plotly # for visualizing the forecast results
-from plotly import graph_objs as go # for creating interactive charts and graphs
-import pandas_datareader as pdr # alternative data source
-import pandas as pd # for data manipulation
+import yfinance                         # for downloading historical stock price data
+from prophet import Prophet             # for building and fitting the forecasting model
+from prophet.plot import plot_plotly    # for visualizing the forecast results
+from plotly import graph_objs as go     # for creating interactive charts and graphs
+import pandas_datareader as pdr         # alternative data source
+import pandas as pd                     # for data manipulation
 
 #--------------------------------------------------------------------#
 
@@ -25,7 +26,7 @@ st.markdown(
   <header>
     <p style="text-align: center; font-size: 40px; font-style: bolder">BY</p>
     <p style="text-align: center">MOHAMMED REHAN ALAM-------KANTHETI BHARAT KUMAR-------PANNALA VARUN KUMAR REDDY</p>
-    <p style="text-align: center">.............21P61A66B3..................................21P61A6677....................................21P61A66D4..............</p>
+    <p style="text-align: center">.............21*******3..................................21*******7....................................21*******4..............</p>
   </header>
   <hr>
   """, unsafe_allow_html=True)
